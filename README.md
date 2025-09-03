@@ -96,8 +96,8 @@ Only the **first 5 items** are classified (simplification to keep development fa
 - **Model:** Must use `gpt-4o-mini` (mandatory)
 - **Endpoint:** Must use OpenAI's **Responses API** → [docs](https://platform.openai.com/docs/api-reference/responses)
 - **Output Schema:**
-  - **category**: `ai-ml`, `programming`, `security`, `devops`, `hardware`, `science`, `business`, `web`, `mobile`, `database`, `math`, `history`, `politics`, `ask-hn`, `show-hn`, `launch-hn`, `job`, `meta`, `other`
-  - **intent**: `news`, `discussion`, `tutorial`, `research`, `opinion`, `announcement`, `ask_hn`, `show_hn`, `launch_hn`, `job`
+  - **category**:  Must be one of the following fixed categories: `ai-ml`, `programming`, `security`, `devops`, `hardware`, `science`, `business`, `web`, `mobile`, `database`, `math`, `history`, `politics`, `ask-hn`, `show-hn`, `launch-hn`, `job`, `meta`, `other`
+  - **intent**: Must be one of the following fixed intents: `news`, `discussion`, `tutorial`, `research`, `opinion`, `announcement`, `ask_hn`, `show_hn`, `launch_hn`, `job`
   - **tags**: list of 1–6 strings
   - **confidence**: integer 0–100
   - **reason_brief**: short explanation (≤160 chars)
